@@ -1,0 +1,14 @@
+name: 202102-minsoc-REE-workshop
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python>=3.7
+  - pip
+  - ipympl
+  - jupyterlab
+  - pip:
+      - jupyter_contrib_nbextensions
+      - -e git+git://github.com/morganjwilliams/pyrolite.git@develop#egg=pyrolite[skl]
